@@ -1,0 +1,161 @@
+2015-06-24 21:36:09 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Adiciona a url amigável automaticamente no momento do cadastro ou edição.
+FILE: admin/view/template/common/header.tpl
+CODE: </head>
+LINE: 35
+FILE: admin/controller/catalog/product.php
+CODE: protected function getForm() {
+LINE: 522
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: //--></script>
+LINE: 1073
+FILE: admin/controller/catalog/category.php
+CODE: protected function getForm() {
+LINE: 282
+FILE: admin/view/template/catalog/category_form.tpl
+CODE: //--></script>
+LINE: 279
+FILE: admin/controller/catalog/information.php
+CODE: protected function getForm() {
+LINE: 261
+FILE: admin/view/template/catalog/information_form.tpl
+CODE: //--></script>
+LINE: 226
+FILE: admin/view/template/catalog/manufacturer_form.tpl
+CODE: //--></script>
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Animação nos Produtos
+FILE: catalog/view/theme/default/template/module/latest.tpl
+CODE: <h3><?php echo $heading_title; ?></h3>
+LINE: 23
+CODE: <div class="product-thumb transition">
+LINE: 30
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 62
+FILE: catalog/view/theme/default/template/module/bestseller.tpl
+CODE: <h3><?php echo $heading_title; ?></h3>
+LINE: 23
+CODE: <div class="product-thumb transition">
+LINE: 30
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 62
+FILE: catalog/view/theme/default/template/module/featured.tpl
+CODE: <h3><?php echo $heading_title; ?></h3>
+LINE: 23
+CODE: <div class="product-thumb transition">
+LINE: 30
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 62
+FILE: catalog/view/theme/default/template/module/special.tpl
+CODE: <h3><?php echo $heading_title; ?></h3>
+LINE: 23
+CODE: <div class="product-thumb transition">
+LINE: 30
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 62
+----------------------------------------------------------------
+MOD: Colored Opencart
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+LINE: 30
+FILE: catalog/view/theme/qthemepro/template/common/header.tpl
+CODE: <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+NOT FOUND!
+FILE: catalog/controller/common/header.php
+CODE: $this->load->model('catalog/category');
+LINE: 82
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'], 'SSL')),
+LINE: 132
+CODE: public function unzip() {
+LINE: 282
+----------------------------------------------------------------
+MOD: Remove Compare
+FILE: catalog/view/theme/default/template/product/search.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+LINE: 70
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 143
+FILE: catalog/view/theme/qthemepro/template/product/search.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+NOT FOUND!
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 146
+FILE: catalog/view/theme/default/template/product/manufacturer_info.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+NOT FOUND!
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 91
+FILE: catalog/view/theme/qthemepro/template/product/manufacturer_info.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+NOT FOUND!
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 93
+FILE: catalog/view/theme/default/template/product/category.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+LINE: 55
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 129
+FILE: catalog/view/theme/qthemepro/template/product/category.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+NOT FOUND!
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 133
+FILE: catalog/view/theme/default/template/product/special.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+LINE: 18
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 91
+FILE: catalog/view/theme/qthemepro/template/product/special.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+NOT FOUND!
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 93
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+NOT FOUND!
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 390
+FILE: catalog/view/theme/qthemepro/template/product/product.tpl
+CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+NOT FOUND!
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 390
+CODE: <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 135
+CODE: <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 135
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 62
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+LINE: 62
+FILE: catalog/view/theme/default/template/product/compare.tpl
+CODE: <?php echo $header; ?>
+LINE: 3
+----------------------------------------------------------------
+MOD: Remove Telephone Number From the Top
+CODE: <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+LINE: 52
+CODE: <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+LINE: 47
+----------------------------------------------------------------
