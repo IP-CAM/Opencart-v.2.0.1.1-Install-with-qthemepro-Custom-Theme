@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 2015-06-24 21:36:09 - MOD: Modification Default
+=======
+2015-05-07 14:26:04 - MOD: Modification Default
+>>>>>>> 77085051429053a12eb71abde0d6ff6c3a7fba03
 FILE: system/engine/action.php
 REGEX: ~(require|include)(_once)?\(([^)]+)~
 LINE: 58
@@ -16,6 +20,7 @@ REGEX: ~(require|include)(_once)?\(([^)]+)~
 LINE: 21
 LINE: 27
 ----------------------------------------------------------------
+<<<<<<< HEAD
 MOD: Adiciona a url amigável automaticamente no momento do cadastro ou edição.
 FILE: admin/view/template/common/header.tpl
 CODE: </head>
@@ -83,6 +88,8 @@ FILE: catalog/controller/common/header.php
 CODE: $this->load->model('catalog/category');
 LINE: 82
 ----------------------------------------------------------------
+=======
+>>>>>>> 77085051429053a12eb71abde0d6ff6c3a7fba03
 MOD: Local copy OCMOD by iSenseLabs
 FILE: admin/controller/extension/installer.php
 CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'], 'SSL')),
@@ -90,6 +97,7 @@ LINE: 132
 CODE: public function unzip() {
 LINE: 282
 ----------------------------------------------------------------
+<<<<<<< HEAD
 MOD: Remove Compare
 FILE: catalog/view/theme/default/template/product/search.tpl
 CODE: <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
@@ -159,3 +167,5 @@ LINE: 52
 CODE: <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
 LINE: 47
 ----------------------------------------------------------------
+=======
+>>>>>>> 77085051429053a12eb71abde0d6ff6c3a7fba03
